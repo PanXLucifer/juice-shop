@@ -18,6 +18,9 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Install Dependencies
+        run: npm install --legacy-peer-deps
+
       - name: Run Snyk SCA Test
         uses: snyk/actions/node@master
         env:
