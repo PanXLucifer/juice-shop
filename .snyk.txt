@@ -1,0 +1,10 @@
+schema-version: v1.19.0
+ignore:
+  'SNYK-JS-MARSDB-480405':
+    - '*':
+        reason: 'Tidak ada patch resmi dari maintainer (no upgrade available). Risk accepted.'
+        expires: 2026-12-31T00:00:00.000Z
+  'SNYK-JS-BASICFTP-20419408':
+    - '*':
+        reason: 'Indirect dependency ReDoS, risk accepted for local environment.'
+        expires: 2026-12-31T00:00:00.000Z

@@ -1,0 +1,25 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+schema-version: v1.19.0
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-JS-MARSDB-480405:
+    - '*':
+        reason: >-
+          Tidak ada patch resmi dari maintainer (no upgrade available). Risk
+          accepted.
+        expires: 2026-12-31T00:00:00.000Z
+  SNYK-JS-EXPRESSJWT-575022:
+    - '*':
+        reason: 'Legacy dependency, risk accepted for local environment.'
+        expires: 2026-12-31T00:00:00.000Z
+  SNYK-JS-SANITIZEHTML-21280765:
+    - '*':
+        reason: Risk accepted for internal demo environment.
+        expires: 2026-12-31T00:00:00.000Z
+  SNYK-JS-BASICFTP-20419408:
+    - '*':
+        reason: Risk accepted for local environment
+        expires: 2026-12-10T15:07:58.686Z
+        created: 2026-11-10T15:07:58.692Z
+version: v1.25.1
+patch: {}
